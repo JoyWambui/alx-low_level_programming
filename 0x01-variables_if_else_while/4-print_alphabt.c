@@ -11,7 +11,7 @@ int main(void)
 
 	for (lower = 97; lower < 123; lower++)
 	{
-		if (lower != 101 && lower !=113)
+		if (lower != 101 && lower != 113)
 		{
 			putchar(lower);
 		}
