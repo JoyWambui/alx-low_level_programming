@@ -15,7 +15,6 @@ int main(void)
 		{
 			putchar(lower);
 		}
-		
 	}
 	putchar(10);
 	return (0);
