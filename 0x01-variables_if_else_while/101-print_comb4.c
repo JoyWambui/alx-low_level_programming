@@ -20,7 +20,7 @@ int main(void)
 				putchar(n);
 				putchar(i);
 				putchar(j);
-				if (n == 55 && i == 56 && j ==57)
+				if (n == 55 && i == 56 && j == 57)
 				{
 				}
 				else
