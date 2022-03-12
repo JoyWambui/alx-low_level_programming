@@ -12,11 +12,11 @@ int main(void)
 
 	for (n = 48; n < 58; n++)
 	{
-		for (i = n+1; i < 58; i++)
+		for (i = n + 1; i < 58; i++)
 		{
 			putchar(n);
 			putchar(i);
-			if (n == 56 && i == 57 )
+			if (n == 56 && i == 57)
 			{
 			}
 			else
@@ -25,7 +25,7 @@ int main(void)
 				putchar(32);
 			}
 		}
-    	}
+	}
 	putchar(13);
 	return (0);
 }
