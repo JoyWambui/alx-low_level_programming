@@ -13,16 +13,16 @@ int main(void)
 
 	for (n = 48; n < 58; n++)
 	{
-		for (i = n; i < 58; i++)
+		for (i = 48; i < 58; i++)
 		{
-			for (j = i + 1; j < 58; j++)
+			for (j = 49; j < 58; j++)
 			{
 				putchar(n);
-				putchar(i);
+				putchar(n);
 				putchar(32);
 				putchar(i);
 				putchar(j);  
-				if (n == 56 && i == 56 && j == 57)
+				if (n == 57 && i == 57 && j == 57)
 				{
 				}
 				else
