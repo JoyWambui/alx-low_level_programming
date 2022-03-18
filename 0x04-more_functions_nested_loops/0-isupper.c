@@ -9,19 +9,14 @@
 
 
 
-int  _isupper(int c)
+int _isupper(int c)
 {
-	int i;
-
-	for (i = 65; i < 91; i++)
+	if (c >= 65 && c <= 91)
 	{
-		if (c == i)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
