@@ -15,7 +15,7 @@ void more_numbers(void)
 
 	while (nl < 12)
 	{
-		while (num >= 0 && num <= 14)
+		while (num >= '0' && num <= '14')
 		{
 			_putchar(num);
 		}
