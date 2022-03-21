@@ -1,0 +1,1 @@
+Builds on arrays as a data structure and pointers concepts covered.
