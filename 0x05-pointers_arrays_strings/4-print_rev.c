@@ -7,21 +7,17 @@
  * Return: 0 success.
  */
 
-
-
 void print_rev(char *s)
 {
-	int i ;
+	int i;
+	int j;
 
-	for (i = 0; i > 0; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*s == '\0')
-		{
-			_putchar(*s);
-			s--;
-			break;
-		}
-		s++;
+	}
+	for (j = i - 1; j >= 0; i--)
+	{
+		_putchar(s[j]);
 	}
 	_putchar(10);
 }
