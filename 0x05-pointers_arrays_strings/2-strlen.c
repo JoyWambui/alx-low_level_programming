@@ -3,12 +3,12 @@
 /**
  * _strlen - returns length of a given string.
  * @s: pointer to character.
- * Return: Nothing.
+ * Return: 0 success.
  */
 
 
 
-void _strlen(char *s)
+int _strlen(char *s)
 {
 	sizeof(*s);
 }
