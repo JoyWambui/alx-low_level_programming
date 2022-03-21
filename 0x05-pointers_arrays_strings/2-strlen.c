@@ -9,8 +9,8 @@
 
 
 int _strlen(char *s)
-{
-	char temp[] = *s;
-	
-	return (sizeof(temp));
+{	
+	char c = *s;
+	char arr[]= c;
+	return (sizeof(arr));
 }
