@@ -10,7 +10,11 @@
 
 int _strlen(char *s)
 {
-	char temp[] = {*s};
-	
-	return sizeof(temp);
+	int end = 0;
+	while (*s < '\0')
+	{
+		end = end + 1;
+		s++;
+	}
+	return end;
 }
