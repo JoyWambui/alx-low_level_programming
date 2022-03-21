@@ -17,7 +17,8 @@ void print_rev(char *s)
 	{
 		if (*s == '\0')
 		{
-			_putchar(*s--);
+			_putchar(*s);
+			s--;
 			break;
 		}
 		s++;
