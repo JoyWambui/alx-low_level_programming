@@ -21,7 +21,7 @@ void rev_string(char *s)
 	j = count - 1;
 	for (i = 0; i < count; i++)
 	{
-		temp[i] = s[j];
+		temp[i] = *(s+j);
 		_putchar(temp[i]);
 		j--;
 	}
