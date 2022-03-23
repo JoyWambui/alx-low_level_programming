@@ -2,8 +2,10 @@
 #include <string.h>
 /**
  * _strncpy - function that copies a string.
- *
- * Returns: pointer to the resulting string.
+ *@dest: pointer to resultant string.
+ *@src: string to be concatenated to dest.
+ *@n: number of bytes in src.
+ * Return: pointer to the resulting string.
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -18,5 +20,5 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = '\0';
 	}
-	return dest;
+	return (dest);
 }
