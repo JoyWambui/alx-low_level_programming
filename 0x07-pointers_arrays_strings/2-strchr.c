@@ -28,6 +28,7 @@ char *_strchr(char *s, char c)
 			s = ptr;
 			break;
 		}
+		s++;
 	}
 	return (s);
 }
