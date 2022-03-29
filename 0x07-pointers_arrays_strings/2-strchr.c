@@ -19,12 +19,12 @@ char *_strchr(char *s, char c)
 		i++;
 		s++;
 	}
-	j = i;
+	j = i + 1;
 	for (k = 0; k < j; k++)
 	{
 		if (s[k] == c)
 		{
-			ptr = &(s[k - 1]);
+			ptr = &(s[k]);
 		}
 		s = ptr;
 	}
