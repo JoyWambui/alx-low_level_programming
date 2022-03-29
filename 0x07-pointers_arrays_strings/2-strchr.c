@@ -8,27 +8,20 @@
  *Return: a pointer to the first occurence of c or NULL if c is not found.
  */
 
+
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-
-	while (s[i])
+	while (*s != '\0')
 	{
-		if (s[i] == c)
+		if (*s == c)
 		{
-			s = &s[i];
-			break;
+			return (s);
 		}
-		else if (s[i] == '\0' && s[i] != c)
-		{
-			s = NULL;
-			break;
-		}
-		i++;
+		s++;
 	}
 	if (*s == c)
 	{
 		return (s);
 	}
-	return (s);
+	return (0);
 }
