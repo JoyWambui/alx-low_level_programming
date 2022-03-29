@@ -1,9 +1,6 @@
 #include "main.h"
 
 /**
-#include "main.h"
-
-/**
  * _strspn - gets the length of a prefix substring
  * @s: string
  * @accept: contains bytes that may or may not compose parts of the string
