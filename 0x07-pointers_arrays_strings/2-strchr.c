@@ -11,18 +11,24 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 	char ptr[100];
-	int j = 0;
+	int j;
+	int k = 0;
 
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
 		{
-			ptr[j] = s[i];
-			j++;
+			j = i;
 		}
-		ptr[j] = s[i];
 		i++;
 	}
+	while (s[j-1] != '\0')
+	{
+		ptr[k] = s[j-1];
+		k++;
+		j++;
+	}
+
 	s = ptr;
 	return (s);
 }
