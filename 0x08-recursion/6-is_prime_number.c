@@ -20,8 +20,7 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	
-	return (prime_wrapper(n, i+1));
+	return (prime_wrapper(n, i + 1));
 }
 /**
  * prime_wrapper - divides a number by the second, checks remainder.
@@ -37,7 +36,7 @@ int prime_wrapper(int n, int i)
 	}
 	else
 	{
-		i +=1 ;
+		i += 1 ;
 		return (1);
 	}
 }
