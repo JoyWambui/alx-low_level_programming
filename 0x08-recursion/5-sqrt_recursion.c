@@ -10,6 +10,8 @@
 int _sqrt_recursion(int n)
 {
 	int i = 1;
+	int sqrt_wrapper(n, i);
+	
 	return sqrt_wrapper(n, i);
 }
 int sqrt_wrapper(n, i)
