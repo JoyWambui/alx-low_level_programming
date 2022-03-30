@@ -26,14 +26,13 @@ int is_prime_number(int n)
  */
 int prime_wrapper(int n, int i)
 {
-	if (n % i == 0 && i != n)
+	if (i <= n && (n % i == 0 && (i != 1 || i != n)))
 	{
 		return (0);
 	}
 	else
 	{
+		i +=1 ;
 		return (1);
 	}
-	i += 1;
-	prime_wrapper(n,i);
 }
