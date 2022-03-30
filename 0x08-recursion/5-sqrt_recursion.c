@@ -18,15 +18,14 @@ int _sqrt_recursion(int n)
 	}
 	else if (n == 0)
 	{
-		return counter;
+		return (counter);
 	}
 	
 	else
 	{
 		n -= i;
 		i += 2;
-		counter ++ ;
+		counter += 1 ;
 		return (_sqrt_recursion(n));
 	}
-	return (counter);
 }
