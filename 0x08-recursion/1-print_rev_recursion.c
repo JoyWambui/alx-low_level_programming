@@ -9,18 +9,20 @@
 
 void _print_rev_recursion(char *s)
 {
-	char *temp = s;
+	int i = 0;
 
 	if (*s != '\0')
 	{
 		s++;
+		i++;
 	}
-	if (temp == s)
+	if (i != 0)
+	{
+		_putchar(*s);
+		_print_rev_recursion(s-1);
+	}
+	else
 	{
 		return;
 	}
-	
-	_putchar(*s);
-	s--;
-	_print_rev_recursion(s);
 }
