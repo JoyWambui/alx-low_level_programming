@@ -16,7 +16,12 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (prime_wrapper(n, i));
+	else
+	{
+		return (1);
+	}
+	
+	return (prime_wrapper(n, i+1));
 }
 /**
  * prime_wrapper - divides a number by the second, checks remainder.
