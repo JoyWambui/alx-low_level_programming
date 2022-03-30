@@ -11,9 +11,9 @@ int _sqrt_recursion(int n)
 {
 	int i = 1;
 
-	if (n / i == i)
+	if (n / i == i && i != n)
 	{
-		return (i - 1);
+		return (i);
 	}
 	else if (n == 0 || n == 1)
 	{
