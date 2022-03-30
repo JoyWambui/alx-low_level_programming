@@ -9,23 +9,22 @@
 
 int _sqrt_recursion(int n)
 {
-	int counter = 0;
+	int result = 1;
 	int i = 1;
 
-	if (n < 0)
+	if (result == n)
+	{
+		return (i);
+	}
+	else if (n == 0 || n == 1)
+	{
+		return (n);
+	}
+	else
 	{
 		return (-1);
 	}
-	else if (n == 0)
-	{
-		return (counter);
-	}
-	
-	else
-	{
-		n -= i;
-		i += 2;
-		counter += 1 ;
-		return (_sqrt_recursion(n));
-	}
+	result = i * i;
+	i++;
+	return (_sqrt_recursion(25));
 }
