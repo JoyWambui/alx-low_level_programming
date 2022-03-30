@@ -36,7 +36,7 @@ int prime_wrapper(int n, int i)
 	}
 	else
 	{
-		i += 1 ;
+		i += 1;
 		return (1);
 	}
 }
