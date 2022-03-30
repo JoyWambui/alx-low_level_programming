@@ -26,7 +26,7 @@ int is_prime_number(int n)
  */
 int prime_wrapper(int n, int i)
 {
-	if (n % i == 0 && (i != 1 || i != n))
+	if (n % i == 0 && i != n)
 	{
 		return (0);
 	}
