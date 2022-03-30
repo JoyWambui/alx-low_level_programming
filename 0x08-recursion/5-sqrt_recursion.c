@@ -10,19 +10,17 @@
 int _sqrt_recursion(int n)
 {
 	int i = 1;
-
-	if (n / i == i && i != n)
+	return sqrt_wrapper(n, i);
+}
+int sqrt_wrapper(n, i)
+{
+	if (i * i == n)
 	{
 		return (i);
 	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
 	else
 	{
-		return (-1);
+		i += 1;
+		return sqrt_wrapper(n, i);
 	}
-	i++;
-	return (_sqrt_recursion(n));
 }
