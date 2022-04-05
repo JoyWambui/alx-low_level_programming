@@ -12,6 +12,7 @@ char *_strdup(char *str)
 {
 	char *arr;
 	unsigned int i;
+	unsigned int j;
 
 	if (str == NULL)
 	{
@@ -21,12 +22,14 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	
 	arr = malloc(sizeof(char) * i);
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
-	arr = str;
+	for (j = 0; j < i; j++)
+	{
+		arr[j] = str[j];
+	}
 	return (arr);
 }
