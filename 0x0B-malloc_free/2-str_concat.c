@@ -19,22 +19,22 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if (s1 == NULL)
-	{
-		*s1 = '\0';
-	}
-	if (s2 == NULL)
-	{
-		*s2 = '\0';
-	}
 	while (*s1)
 	{
+		if (s1 == NULL)
+		{
+			*s1 = '\0';
+		}
 		dest[i] = *s1;
 		s1++;
 		i++;
 	}
 	while (*s2)
 	{
+		if (s2 == NULL)
+		{
+			*s2 = '\0';
+		}
 		dest[i] = *s2;
 		s2++;
 		i++;
