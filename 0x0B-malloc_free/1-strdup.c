@@ -11,7 +11,7 @@
 char *_strdup(char *str)
 {
 	char *arr;
-	char copy[] = *str;
+	char copy[] = str;
 	unsigned int i;
 
 	if (str == NULL)
