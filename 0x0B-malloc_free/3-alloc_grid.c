@@ -38,6 +38,15 @@ int **alloc_grid(int width, int height)
 			pointer_array[i][j] = 0;
 		}
 	}
-	free(pointer_array);
 	return (pointer_array);
+}
+/**
+ * release- frees allocated space
+ * @pointer_array: allocated space.
+ * @data: allocated space
+ */
+
+void release(int **pointer_array, int *data){
+	free(pointer_array);
+	free(data);
 }
