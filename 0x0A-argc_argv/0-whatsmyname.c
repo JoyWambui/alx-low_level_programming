@@ -3,9 +3,9 @@
 /**
  * main - prints program's name.
  *
- * @param argc - number of arguments.
- * @param argv - pointer to string arguments
- * @return int
+ * @argc: number of arguments.
+ * @argv: pointer to string arguments
+ * Return: int
  */
 int main(int argc, char **argv)
 {
