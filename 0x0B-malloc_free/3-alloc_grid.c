@@ -35,12 +35,10 @@ int **s, r, c;
 			free(s);
 			return (NULL);
 		}
-
 		for (c = 0; c <= width; c++)
 		{
 			s[r][c] = 0;
 		}
 	}
 	return (s);
-
 }
