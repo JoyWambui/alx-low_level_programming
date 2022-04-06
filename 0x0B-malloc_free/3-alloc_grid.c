@@ -12,7 +12,6 @@
 int **alloc_grid(int width, int height)
 {
 	int **pointer_array;
-	int *data;
 	int i;
 	int j;
 	int k;
@@ -21,7 +20,6 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	data = malloc(sizeof(int) * width * height);
 	pointer_array = malloc(sizeof(int *) * width);
 	if (pointer_array == NULL)
 	{
@@ -29,7 +27,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < width; i++)
 	{
-		pointer_array[i] = data + (i * height);
+		pointer_array[i] = malloc(height * sizeof(*pointer_array[i]));
 	}
 	for (j = 0; j < height; j++)
 	{
@@ -39,14 +37,4 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (pointer_array);
-}
-/**
- * release- frees allocated space
- * @pointer_array: allocated space.
- * @data: allocated space
- */
-
-void release(int **pointer_array, int *data){
-	free(pointer_array);
-	free(data);
 }
