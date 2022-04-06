@@ -1,40 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * alloc_grid - nested loop to make grid
- * @width: width input
- * @height: height input
- * Return: pointer to 2 dim. array
+ * alloc_grid - prints a grid of integers
+ * @width: width of the grid
+ * @height: height of the grid
+ *
+ * Return: pointer..
  */
 int **alloc_grid(int width, int height)
 {
-	int **iarray;
-	int i, n;
+int **s, r, c;
 
 	if (width <= 0 || height <= 0)
-		return (NULL);
-
-	iarray = malloc(sizeof(int) * height);
-
-	if (iarray == NULL)
 	{
-		free(iarray);
 		return (NULL);
 	}
 
-	for (i = 0; i < height; i++)
+	s = malloc(sizeof(int *) * height);
+	if (s == NULL)
 	{
-		iarray[i] = malloc(sizeof(int) * width);
-		if (iarray == NULL)
+		return (NULL);
+	}
+
+	for (r = 0; r < height; r++)
+	{
+		s[r] = malloc(sizeof(int) * width);
+
+		if (s[r] == NULL)
 		{
-			free(iarray);
+			for (; r >= 0; r--)
+			{
+				free(s[r]);
+			}
+			free(s);
 			return (NULL);
 		}
 
-		for (n = 0; n < width; n++)
+		for (c = 0; c <= width; c++)
 		{
-			iarray[i][n] = 0;
+			s[r][c] = 0;
 		}
 	}
-	return (iarray);
+	return (s);
+
 }
