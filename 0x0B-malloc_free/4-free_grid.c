@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * alloc_grid - prints a grid of integers.
+ * free_grid - frees a grid of pointers to integers.
  * @grid: 2 dimensional grid.
  * @height: number of rows.
  *
@@ -9,8 +9,12 @@
 void free_grid(int **grid, int height)
 {
 	int i;
-
-	for (i = 0; i <=height; i++)
+	if (grid == NULL)
+	{
+		return(NULL);
+	}
+	
+	for (i = 0; i <= height; i++)
 	{
 		free(grid[i]);
 	}
